@@ -1,0 +1,53 @@
+body {
+    background-image: url('element/head.png');
+    background-position: -41px -184px;
+    background-repeat: no-repeat;
+    background-size: 427px 427px; 
+    background-color: #ffffff; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.name {
+    width: 100%;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.category-container {
+    display: flex;            /* ใช้ Flexbox เพื่อจัดเรียงในแนวนอน */
+    justify-content: space-between; /* จัดให้มีช่องว่างระหว่างปุ่ม */
+    align-items: center;      /* จัดตำแหน่งแนวตั้งของปุ่มให้อยู่ตรงกลาง */
+    flex-wrap: wrap;          /* ให้ปุ่มเรียงเป็นแถวใหม่ถ้าหน้าจอแคบ */
+    margin-top: 20px;
+}
+
+.category-item {
+    text-align: center;       /* จัดข้อความให้อยู่ตรงกลางใต้ปุ่ม */
+    margin: 25 90px;           /* เพิ่มระยะห่างระหว่างแต่ละปุ่ม */
+}
+
+.category-btn {
+    width: 50px;              /* ขนาดของรูปภาพ */
+    height:50px;
+}
+
+.category-btn:hover {
+    transform: scale(1.1);    /* ขยายรูปภาพเมื่อเลื่อนเมาส์ */
+}
+
+.category-item p {
+    margin-top: 0px;
+    font-size: 14px;          /* ขนาดฟอนต์ของชื่อหมวดหมู่ */
+    color: #333;              /* สีของข้อความ */
+}

@@ -1,0 +1,19 @@
+body {
+    background-image: url("bg_page.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1f90e0;
+}
+
+.name{
+    align-items: center;
+    width: 100%;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.name :hover{
+    color: lightskyblue;
+}

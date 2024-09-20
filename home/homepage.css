@@ -1,8 +1,8 @@
 body {
     background-image: url('element/head.png');
-    background-position: -41px -184px;
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: 427px 427px; 
+    background-size: contain; 
     background-color: #ffffff; 
     font-family: 'Poppins', sans-serif;
 }
@@ -23,7 +23,6 @@ body {
     text-decoration: none;
 }
 
-
 .category-container {
     display: flex;            /* ใช้ Flexbox เพื่อจัดเรียงในแนวนอน */
     justify-content: space-between; /* จัดให้มีช่องว่างระหว่างปุ่ม */
@@ -38,8 +37,8 @@ body {
 }
 
 .category-btn {
-    width: 50px;              /* ขนาดของรูปภาพ */
-    height:50px;
+    width: 60px;              /* ขนาดของรูปภาพ */
+    height: auto;
 }
 
 .category-btn:hover {
@@ -50,4 +49,21 @@ body {
     margin-top: 0px;
     font-size: 14px;          /* ขนาดฟอนต์ของชื่อหมวดหมู่ */
     color: #333;              /* สีของข้อความ */
+}
+
+.image-container {
+    display: flex;
+    overflow-x: auto; /* ให้เลื่อนซ้ายขวาได้ */
+    gap: 5px; /* เว้นระยะระหว่างรูป */
+}
+
+.image-item {
+    flex: 0 0 auto; /* ป้องกันไม่ให้ย่อขนาด */
+}
+
+.image-item img {
+    width: fit-content; /* กำหนดความกว้างของรูปภาพ */
+    height: auto; /* ปรับความสูงอัตโนมัติ */
+    border-radius: 8px; /* มุมมน */
+    gap: 5px; /* เว้นระยะระหว่างรูป */
 }
